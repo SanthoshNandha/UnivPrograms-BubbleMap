@@ -1,0 +1,144 @@
+program_name,term,tfidf
+data_univ1,management,6
+data_univ1,lifecycle,3
+data_univ1,interest,2
+data_univ1,usefulness,2
+data_univ1,data discovery,2
+data_univ1,retrieval,4
+data_univ1,data quality,2
+data_univ1,re use,2
+data_univ1,authentication,1
+data_univ1, archiving,2
+data_univ1,preservation,7
+data_univ1,representation,2
+data_univ1,standard,4
+data_univ1,policy,1
+data_univ1,theory,2
+data_univ1,skill,1
+data_univ1,academic,1
+data_univ1,government,1
+data_univ1,industrial,1
+data_univ2,information professional,1
+data_univ2,archive,3
+data_univ2,government agencies,1
+data_univ2,corporation,1
+data_univ2,management,2
+data_univ2,preservation,2
+data_univ2,data asset,1
+data_univ2,standard,3
+data_univ2,practice,2
+data_univ2,creation,2
+data_univ2,dissemination,1
+data_univ2,reuse,1
+data_univ2,cyber environment,1
+digit_univ3,digital material,12
+digit_univ3,information organization,1
+digit_univ3,long term access,1
+digit_univ3,maintenance,1
+digit_univ3,technologies,1
+digit_univ3,equipment,1
+digit_univ3,software,1
+digit_univ3,knowledge organization,1
+digit_univ3,theoretical,1
+digit_univ3,technical,2
+digit_univ3,social,1
+digit_univ3,strategies,1
+digit_univ3,preservation,2
+digit_univ3,lifecycle,1
+digit_univ3,foundation,2
+digit_univ3,evaluating,2
+digit_univ3,needs,1
+digit_univ3,preservation,2
+digit_univ3,certificate,5
+digit_univ4,archive,4
+digit_univ4,knowledge management,1
+digit_univ4,competitive intelligence,1
+digit_univ4,digital libraries,2
+digit_univ4,management,2
+digit_univ4,preservation,4
+digit_univ4,digital resources,2
+digit_univ4,lifecycle,1
+digit_univ4,needs,2
+digit_univ4,digital information,3
+digit_univ4,information professional,1
+digit_univ4,provide access,1
+digit_univ4,add value,1
+digit_univ4,institutional setting,1
+digit_univ5,archive,2
+digit_univ5,preservation,6
+digit_univ5,access,3
+digit_univ5,information,18
+digit_univ5,management,7
+digit_univ5,information infrastructure,1
+digit_univ5,technical,2
+digit_univ5,awareness,1
+digit_univ5,complex collections,1
+digit_univ5,skill,3
+digit_univ5,commercial,1
+digit_univ5,cultural,3
+digit_univ5,hands on,1
+digit_univ5,field study,1
+digit_univ6,experiential learning,1
+digit_univ6,conservation lab,1
+digit_univ6,museum,4
+digit_univ6,historical society,2
+digit_univ6,needs,3
+digit_univ6,information society,1
+digit_univ6,digital tool,1
+digit_univ6,emerging technologies,1
+digit_univ6,access,5
+digit_univ6,digitization,3
+digit_univ6,use,11
+digit_univ2,information technology,4
+digit_univ2,digital information,2
+digit_univ2,recognize,2
+digit_univ2,practical,1
+digit_univ2,information professional,1
+digit_univ2,integrity,1
+digit_univ2,data intensive,1
+digit_univ2,requirement,3
+digit_univ2,field experience,2
+digit_univ7,data management,6
+digit_univ7,foundation,1
+digit_univ7,experience,2
+digit_univ7,competencies,4
+digit_univ7,stewardship,1
+digit_univ7,skill,2
+digit_univ7,virtual lab,1
+digit_univ7,technical,3
+digit_univ7,preservation,4
+digit_univ7,working professional,1
+digit_UK_univ8,skill,8
+digit_UK_univ8,collection,4
+digit_UK_univ8,electronic information,1
+digit_UK_univ8,digital asset,1
+digit_UK_univ8,policy,1
+digit_UK_univ8,procedure,1
+digit_UK_univ8,governance,3
+digit_UK_univ8,integrity,1
+digit_UK_univ8,digital material,1
+digit_UK_univ8,experience,1
+digit_UK_univ8,organization,1
+digit_UK_univ8,stakeholder,1
+digit_UK_univ8,ecology,1
+digit_UK_univ8,archive,2
+digit_UK_univ8,administration,3
+digit_UK_univ8,process,3
+digit_UK_univ8,employability,1
+digit_UK_univ9,international,1
+digit_UK_univ9,theory,2
+digit_UK_univ9,practice,4
+digit_UK_univ9,training,2
+digit_UK_univ9,management,10
+digit_UK_univ9,digital asset,9
+digit_UK_univ9,organization,1
+digit_UK_univ10,management,5
+digit_UK_univ10,data,3
+digit_UK_univ10,heritage organization,1
+digit_UK_univ10,cultural,1
+digit_UK_univ10,practitioner,1
+digit_UK_univ10,consultation,1
+digit_UK_univ10,practice,2
+digit_UK_univ10,presentation,2
+digit_UK_univ10,engage,2
+digit_UK_univ10,information management,1
