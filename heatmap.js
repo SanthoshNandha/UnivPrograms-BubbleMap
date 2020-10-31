@@ -481,38 +481,36 @@ function heatmap_display(url, heatmapId, paletteName) {
         	return "gray";
         })
         .on('mouseover', function(d, i, j) {
-        	 if (d != 0) {
-        	d3.select('#colLabel_' + i).style("fill","red").style("font-weight","bold");
-        	d3.select(this).style("fill","red").style("stroke","red");
-            d3.select('#rowLabel_' + j).style("fill","red").style("font-weight","bold").each(function(rowlabelD){
-            	d3.selectAll(".label")
-    			.style("fill",function(labelD){
-    				if(labelD.label == rowlabelD){
-    					return "red";
-    				}
-    				else{
-    					return "gray";
-    				}
-    			})
-    			
-    			 d3.select(".bar_"+rowlabelD.split(" ").join("_"))
-    	    		.insert("rect",".value")
-    	    		.attr("class","tempRect")
-    		        .attr("transform", "translate("+5+", 0)")
-    		        .attr("height", barHeight)
-    		        .attr("width", function(){
-    		            return scale(d);
-    		        })
-    		        .style("fill","red")
-    		        .style("opacity","0.7");
-            });
-            
-           
-            
-           
-                tooltip.html('<div class="heatmap_tooltip">' + d + '</div>');
-                tooltip.style("visibility", "visible");
-            } else
+        	if (d != 0) {
+				d3.select('#colLabel_' + i).style("fill","red").style("font-weight","bold");
+				d3.select(this).style("fill","red").style("stroke","red");
+				d3.select('#rowLabel_' + j).style("fill","red").style("font-weight","bold").each(function(rowlabelD){
+					d3.selectAll(".label")
+					.style("fill",function(labelD){
+						if(labelD.label == rowlabelD){
+							return "red";
+						}
+						else{
+							return "gray";
+						}
+					})
+					
+					d3.select(".bar_"+rowlabelD.split(" ").join("_"))
+						.insert("rect",".value")
+						.attr("class","tempRect")
+						.attr("transform", "translate("+5+ ", 0)")
+						.attr("height", barHeight)
+						.attr("width", function(){
+							return scale(d);
+						})
+						.style("fill","red")
+						.style("opacity","0.7");
+				});		
+
+				tooltip.html('<div class="heatmap_tooltip">' + d + '</div>');
+				tooltip.style("visibility", "visible");
+			} 
+			else
                 tooltip.style("visibility", "hidden");
         })
         .on('mouseout', function(d, i, j) {
@@ -525,7 +523,8 @@ function heatmap_display(url, heatmapId, paletteName) {
             
         })
         .on("mousemove", function(d, i) {
-            tooltip.style("top", (d3.event.pageY - 25) + "px").style("left", (d3.event.pageX - 28) + "px");
+			
+            tooltip.style("top", (d3.event.pageY) - 75 + "px").style("left", (d3.event.pageX) - 320 + "px");
         })
         .on('click', function() {
             //console.log(d3.select(this));
