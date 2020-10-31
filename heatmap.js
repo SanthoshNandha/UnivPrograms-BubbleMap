@@ -2,8 +2,10 @@ var classesNumber = 10,
     cellSize = 24;
 	rowSize = 12;
 
-function heatmap_display(url, heatmapId, paletteName) {
 
+
+function heatmap_display(url, heatmapId, paletteName) {
+	
 	var tooltip = d3.select(heatmapId)
 			        .append("div")
 			        .style("position", "absolute")
@@ -14,8 +16,8 @@ function heatmap_display(url, heatmapId, paletteName) {
     }
     var zoomListener = d3.behavior.zoom().scaleExtent([0.1, 3]).on("zoom", zoom);
 
-    var viewerWidth = $(heatmapId).width();
-    var viewerHeight = $(heatmapId).height();
+    var viewerWidth = 900 //$(heatmapId).width();
+    var viewerHeight = 1500 //$(heatmapId).height();
     var viewerPosTop = 75;
     var viewerPosLeft = 150;
 
@@ -32,6 +34,7 @@ function heatmap_display(url, heatmapId, paletteName) {
     var svg;
 
     d3.csv(url,function(error,data){
+		
     	var csvData = {};
     	var rows =  d3.set(data.map(function( item ) { return item.term; } )).values();
     	var columns = d3.set(data.map(function( item ) { return item.program_name; } )).values();

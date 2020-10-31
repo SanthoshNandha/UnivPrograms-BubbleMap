@@ -1,46 +1,68 @@
+<!-- 
+	Author: Santhosh Nandhakumar
+ -->
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		
-		<script src="https://d3js.org/d3.v3.js"></script>
-		<script src="https://d3js.org/colorbrewer.v1.min.js"></script>
-		<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-		<script src="heatmap.js"></script>
-		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<link rel="stylesheet" href="heatmap.css" />
 		
-		<script>
-		$(document).ready(function() {
-			//drawHistoGram();
-			heatmap_display("program_keyword_count.csv", "#heatmap", "Spectral");
-		});
-		</script>
+		<title>Bubble-Map</title>
+	
 	</head>
 	<body>
-		<div class="conatinerView">
+		<div class="container">
 			<div  class="ChartView">
-				<div class="chartOptions">
-					Bubble Map:
-				<select id="order">
-				  <option value="null" selected> ----- </option>
-				  <option value="sortinit_col_row">Initial order on columns and rows</option>
-				  <option value="sortinit_row">Initial order on rows</option>
-				  <option value="sortinit_col">Initial order on columns</option>
-				</select>
+				<div class="row" style="
+				padding-left: 150px;">
+					<div class="col">
+						<div class="chartOptions">
+							Bubble Map:
+							<select id="order">
+							<option value="null" selected> ----- </option>
+							<option value="sortinit_col_row">Initial order on columns and rows</option>
+							<option value="sortinit_row">Initial order on rows</option>
+							<option value="sortinit_col">Initial order on columns</option>
+							</select>
+						</div>
+					</div>
+					<div class="col" style="
+					margin-left: 176px;">
+						<div class="histoOptions">
+							Histogram:
+							<select id="histoOrder">
+								<option value="null" selected >-----</option>
+							  	<option value="nameAsc" >Ascending by keyword</option>
+							   	<option value="nameDesc" >Decending by keyword</option>
+								<option value="valueAsc" >Ascending by Value</option>
+								<option value="valueDesc">Decending by Value</option>
+							</select>
+						</div>
+					</div>
 				</div>
-				<div class="histoOptions">
-					Histogram:
-				<select id="histoOrder">
-					<option value="null" selected >-----</option>
-				  	<option value="nameAsc" >Ascending by keyword</option>
-				   	<option value="nameDesc" >Decending by keyword</option>
-				    <option value="valueAsc" >Ascending by Value</option>
-				    <option value="valueDesc">Decending by Value</option>
-				</select>
+				<div class="row">
+					<div class="col">
+						<div id="heatmap"></div>
+					</div>
 				</div>
-				<div id="heatmap"></div>
 			</div>
 		</div> 
+
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		<script src="https://d3js.org/d3.v3.js"></script>
+		<script src="https://d3js.org/colorbrewer.v1.min.js"></script>
+		<script src="heatmap.js"></script>
+
+		<script>
+			$(document).ready(function() {
+				heatmap_display("program_keyword_count.csv", "#heatmap", "Spectral");
+			});
+			</script>
+
 	</body>
 </html>
