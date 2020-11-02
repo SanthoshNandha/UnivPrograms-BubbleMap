@@ -1,6 +1,6 @@
 # Bubble Map using D3.js
 
-Interactive Bubble Map showing the frequeny of terms in different university courses.
+Interactive Bubble Map showing the frequency of terms in different university courses.
 
 
 # Preview
